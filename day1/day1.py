@@ -1,21 +1,22 @@
 import sys, os
-
 input = os.path.dirname(os.path.abspath(__file__)) + '/input'
 
 
 def anyways():
-	a = 0
-	p1 = 0
+	p1 = False
+	p2 = False
+	s = set()
 	for a in range(num_len):
-		b = a + 1
-		for b in range(num_len):
-			if nums[a] + nums[b] == 2020 and p1 == 0:
-				p1 = nums[a] * nums[b]
-				print("part1", p1)
-			for c in range(num_len):
+		if p1 and p2: return
+		if p1 is False and (2020 - nums[a] in s):
+			p1 = True
+			print("part1", nums[a] * (2020 - nums[a]))
+		s.add(nums[a])
+		for b in range(a + 1, num_len):
+			for c in range(b + 1, num_len):
 				if nums[a] + nums[b] + nums[c] == 2020:
+					p2 = True
 					print("part2", nums[a] * nums[b] * nums[c])
-					return
 
 
 with open(input, 'r') as f:
