@@ -7,16 +7,17 @@ def anyways():
 	p2 = False
 	s = set()
 	for a in range(num_len):
-		if p1 and p2: return
+		if p1 and p2:
+			print("part1", p1)
+			print("part2", p2)
+			return
 		if p1 is False and (2020 - nums[a] in s):
-			p1 = True
-			print("part1", nums[a] * (2020 - nums[a]))
+			p1 = nums[a] * (2020 - nums[a])
 		s.add(nums[a])
 		for b in range(a + 1, num_len):
 			for c in range(b + 1, num_len):
 				if nums[a] + nums[b] + nums[c] == 2020:
-					p2 = True
-					print("part2", nums[a] * nums[b] * nums[c])
+					p2 = nums[a] * nums[b] * nums[c]
 
 
 with open(input, 'r') as f:
