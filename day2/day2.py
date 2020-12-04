@@ -1,4 +1,4 @@
-import sys, os
+import os
 
 with open(os.path.dirname(os.path.abspath(__file__)) + '/input', 'r') as f:
 	data = f.read()
@@ -12,8 +12,8 @@ with open(os.path.dirname(os.path.abspath(__file__)) + '/bb', 'r') as f:
 def anyways(data):
 	p1 = 0
 	p2 = 0
-	for l in data.splitlines():
-		counts, char, passw = l.split()
+	for line in data.splitlines():
+		counts, char, passw = line.split()
 		min_pos, max_pos = [*map(int, counts.split("-"))]
 		char = char[0]
 		c = passw.count(char)

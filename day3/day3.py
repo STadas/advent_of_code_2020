@@ -1,4 +1,4 @@
-import sys, os, re
+import os
 
 
 def readfile(input):
@@ -25,6 +25,7 @@ data, splitdata, linelen, datalen = readfile(os.path.dirname(os.path.abspath(__f
 print("part1", findtrees(3, 1))
 print("part2", findtrees(1, 1)*findtrees(3, 1)*findtrees(5, 1)*findtrees(7, 1)*findtrees(1, 2))
 
+# bb
 right_list = [2, 3, 4, 6, 8, 9, 12, 16, 18, 24, 32, 36, 48, 54, 64]
 down_list = [1, 5, 7, 11, 13, 17, 19, 23, 25, 29, 31, 35, 37, 41, 47]
 data, splitdata, linelen, datalen = readfile(os.path.dirname(os.path.abspath(__file__)) + '/bb')
