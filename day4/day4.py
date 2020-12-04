@@ -1,4 +1,4 @@
-import os, re
+import os
 
 with open(os.path.dirname(os.path.abspath(__file__)) + '/input', 'r') as f:
 	data = f.read()
@@ -15,7 +15,8 @@ for line in data.split("\n\n"):
 	c1 = 0
 	c2 = 0
 
-	for field in re.split("[\n ]", line):
+	line = line.replace("\n", " ")
+	for field in line.split(" "):
 		if ':' not in field: continue
 		key, val = field.split(":")
 		
