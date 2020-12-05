@@ -32,4 +32,7 @@ def anyways(data):
 
 anyways(readfile("input"))
 print("--- bb ---")
-anyways(readfile("bb"))
+try:
+	anyways(readfile("bigboy"))
+except FileNotFoundError:
+	print("(>100MB) unzip it if you wanna test it")
