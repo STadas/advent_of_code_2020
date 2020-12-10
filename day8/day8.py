@@ -44,5 +44,5 @@ def anyways(data, ind = 0, out = True):
 
 anyways(readfile("input"))
 print("--- bb ---")
-anyways(readfile("bb"))
-# print("too slow, dont bother")
+# anyways(readfile("bb"))
+print("can get part1 but if i try to check non-negative jmps its too slow")
