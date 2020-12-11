@@ -35,7 +35,6 @@ def anyways(data):
 			sanj += 1
 			checked.add(num - 3)
 	print("part1", ichij * sanj)
-
 	print("part2", mmmyesrecursive(max(data), data))
 		
 

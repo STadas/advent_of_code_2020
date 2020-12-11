@@ -10,3 +10,5 @@ whats the point man
 
 \>25s on day5 bigboi<br>
 ngmi
+
+![](funnies/day11.png)
