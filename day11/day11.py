@@ -13,7 +13,7 @@ def count_occ2(grid, i, j, p2):
 	dirs = [[-1, -1], [-1, 0], [-1, 1], [0, -1], [0, 1], [1, -1], [1, 0], [1, 1]]
 	for d in dirs:
 		tempy, tempx = i + d[0], j + d[1]
-		while 0<=tempy<maxy and 0<=tempx<maxx:
+		while 0 <= tempy < maxy and 0 <= tempx < maxx:
 			if p2 and grid[tempy][tempx] == ".":
 				tempy += d[0]
 				tempx += d[1]
