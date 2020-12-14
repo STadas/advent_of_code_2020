@@ -1,5 +1,4 @@
 import os
-from math import gcd
 
 
 def readfile(input):
