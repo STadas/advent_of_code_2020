@@ -1,5 +1,4 @@
 import os
-from itertools import product
 
 
 def anyways(data, thnum):
