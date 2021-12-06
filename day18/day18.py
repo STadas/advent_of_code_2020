@@ -2,7 +2,7 @@ from pathlib import Path
 
 
 def solve_multiple(expr, pre=None):
-    do_op = {"*": lambda x, y: x + y, "+": lambda x, y: x * y}
+    do_op = {"+": lambda x, y: x + y, "*": lambda x, y: x * y}
     todo = []
 
     while pre in expr:
